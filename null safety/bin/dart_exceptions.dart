@@ -52,8 +52,8 @@ functionTwo() {
     print(i);
     try{
       double amount = double.parse("not a number");
-    }on FormatException{
-      print("erro");
+    }on FormatException catch(e){
+      print(e.message);
     }
     
   }

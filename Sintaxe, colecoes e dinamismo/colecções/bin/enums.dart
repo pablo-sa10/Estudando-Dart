@@ -6,7 +6,6 @@ void main() {
   destinos.add(destino);
   destinos.add(destino2);
   //print(destinos);
-
   List<int> num = [1, 2, 3, 4, 1, 2];
   Set<int> numSemRepetir = {};
 

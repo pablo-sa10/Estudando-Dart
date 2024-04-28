@@ -14,6 +14,7 @@ void main() async {
 
   print('KakoBOT:\n Oi :) \n Como posso ajudar?');
   do {
+
     usuario = stdin.readLineSync().toString();
     print('-- Processando pergunta, aguarde..--');
     await BotClock().clock(1);
@@ -38,4 +39,14 @@ void main() async {
   } while (a);
 
   print('--Encerrando KakoBOT--');
+}
+
+  Stream myStream(int interval, [int? maxCount]) async*{
+  int i = 1;
+  while(i != maxCount){
+    print("contagem $i");
+    await Future.delayed(Duration(seconds: interval));
+    yield i++;
+  }
+  print("acabou a contagem");
 }
